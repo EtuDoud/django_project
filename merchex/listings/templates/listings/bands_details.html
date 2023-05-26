@@ -1,0 +1,12 @@
+
+{% extends 'listings/base.html' %}
+
+{% block content %}
+    <h1>Hello Django</h1>                                                           
+    <p>Mon groupes preferes est : </p>
+    <ul>
+        <li>Name : {{ band.name }}</li>
+        <li>Genre: {{ band.genre }}</li>
+    </ul>
+    <a href="{% url 'band-list' %}" >Retour a tous les groupes</a>
+{% endblock %}
